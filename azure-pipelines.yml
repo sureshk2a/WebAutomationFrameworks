@@ -16,6 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    cd WebDriverIO
     npm install
     npm run test
   displayName: 'npm install and build'
