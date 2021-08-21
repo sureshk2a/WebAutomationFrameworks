@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="TestNG.E2E.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="LogoutTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNG.E2E.LogoutForm">
+        <methods>
+          <include name="LogoutOfForm" invocation-numbers="1"/>
+          <include name="DriverInit"/>
+          <include name="TearDown"/>
+          <include name="AuthPageNavigation"/>
+        </methods>
+      </class> <!-- TestNG.E2E.LogoutForm -->
+      <class name="TestNG.E2E.LoginForm">
+        <methods>
+          <include name="DriverInit"/>
+          <include name="TearDown"/>
+          <include name="AuthPageNavigation"/>
+        </methods>
+      </class> <!-- TestNG.E2E.LoginForm -->
+    </classes>
+  </test> <!-- LogoutTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

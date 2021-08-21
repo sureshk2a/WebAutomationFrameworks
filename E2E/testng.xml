@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count = "2">
+<listeners>
+	<listener class-name="TestNG.E2E.Listeners"/>
+</listeners>
+  <test name="LoginTest">
+  	<parameter name="browser" value="Chrome" />
+	    <classes>
+	      <class name="TestNG.E2E.LoginForm"/>
+	    </classes>
+  </test> <!-- Test --> 
+  <test name="LogoutTest">
+    <parameter name="browser" value="Chrome" />
+    	<classes>
+      	  <class name="TestNG.E2E.LogoutForm"/>
+    	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
