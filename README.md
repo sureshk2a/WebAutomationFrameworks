@@ -1,3 +1,3 @@
 # WebAutomationFrameworks
 
-Reusable web automation frameworks in C#, Javascript, Python, RPA, Java and Testcomplete 
+Reusable web automation framework boilerplate code for Java and NodeJs
